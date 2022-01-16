@@ -1,0 +1,30 @@
+@import "src/assets/scss";
+
+:host {
+  width: 100%;
+  color: $white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+button {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border-radius: 50%;
+  @extend .flex-centered;
+
+  &:hover {
+    @extend .hover-blue-dark;
+  }
+
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

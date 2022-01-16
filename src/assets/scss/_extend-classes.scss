@@ -1,0 +1,12 @@
+@import "colors";
+
+.hover-blue-dark {
+  background-color: $blue-dark-hover;
+  cursor: pointer;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
