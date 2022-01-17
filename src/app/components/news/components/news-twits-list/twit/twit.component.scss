@@ -25,26 +25,47 @@
   }
 
   &__content {
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
-
-    span {
-      color: $white;
-
-      span {
-        color: $gray;
-      }
-    }
-
-    p {
-      line-height: normal;
-      color: $white;
-    }
 
     img {
       width: 100%;
       height: auto;
       border-radius: 1.25rem;
+    }
+
+    .twit-information {
+      display: flex;
+
+      &__content {
+        width: 90%;
+
+        span {
+          color: $white;
+
+          span {
+            color: $gray;
+          }
+        }
+
+        p {
+          line-height: normal;
+          color: $white;
+        }
+
+      }
+
+      &__options {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        img {
+          width: 1.25rem;
+          height: auto;
+        }
+      }
     }
 
     .reactions {
@@ -69,9 +90,5 @@
         }
       }
     }
-  }
-
-  &__options {
-    width: 10%;
   }
 }

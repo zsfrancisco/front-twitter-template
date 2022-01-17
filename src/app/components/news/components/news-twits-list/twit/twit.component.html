@@ -2,8 +2,16 @@
   <img [alt]="twit.username+'-photp'" [src]="twit.userPhoto">
 </section>
 <section class="twit__content">
-  <span>{{twit.userFullName}} <span>{{twit.username}} - {{twit.timeOfPublished}}</span></span>
-  <p>{{twit.content}}</p>
+  <div class="twit-information">
+
+    <div class="twit-information__content">
+      <span>{{twit.userFullName}} <span>{{twit.username}} - {{twit.timeOfPublished}}</span></span>
+      <p>{{twit.content}}</p>
+    </div>
+    <div class="twit-information__options">
+      <img alt="ellipsis-icon" src="assets/images/svg/ellipsis-icon.svg">
+    </div>
+  </div>
   <img *ngIf="twit.imageAttachment" [alt]="twit.imageAttachment" [src]="twit.imageAttachment">
   <div class="reactions">
     <div class="reaction">
@@ -23,5 +31,3 @@
     </div>
   </div>
 </section>
-<section class="twit__options"></section>
-
