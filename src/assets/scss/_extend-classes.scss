@@ -10,3 +10,14 @@
   justify-content: center;
   align-items: center;
 }
+
+.create-twit-button {
+  background-color: $blue-light;
+  color: $white;
+  font-weight: bold;
+  border-radius: 624.938rem;
+
+  &:hover {
+    background-color: $blue-light-hover;
+  }
+}
