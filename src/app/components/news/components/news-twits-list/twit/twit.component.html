@@ -1,0 +1,27 @@
+<section class="twit__photo">
+  <img [alt]="twit.username+'-photp'" [src]="twit.userPhoto">
+</section>
+<section class="twit__content">
+  <span>{{twit.userFullName}} <span>{{twit.username}} - {{twit.timeOfPublished}}</span></span>
+  <p>{{twit.content}}</p>
+  <img *ngIf="twit.imageAttachment" [alt]="twit.imageAttachment" [src]="twit.imageAttachment">
+  <div class="reactions">
+    <div class="reaction">
+      <img alt="comment-icon" src="assets/images/svg/comment-icon.svg">
+      <span>{{twit.comments}}</span>
+    </div>
+    <div class="reaction">
+      <img alt="retweet-icon" src="../../../../../../assets/images/svg/retweet-icon.svg">
+      <span>{{twit.retweets}}</span>
+    </div>
+    <div class="reaction">
+      <img alt="favorite-icon" src="assets/images/svg/heart-icon.svg">
+      <span>{{twit.favorites}}</span>
+    </div>
+    <div class="reaction">
+      <img alt="share-icon" src="assets/images/svg/share-icon.svg">
+    </div>
+  </div>
+</section>
+<section class="twit__options"></section>
+

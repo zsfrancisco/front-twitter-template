@@ -5,4 +5,23 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 0.625rem;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $blue-dark;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $gray;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $gray;
+  }
 }

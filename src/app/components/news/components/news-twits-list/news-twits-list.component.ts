@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Observable, of} from "rxjs";
+import {Twit} from "../../../../tyoes";
+import {TwitService} from "../../../../services/twit.service";
 
 @Component({
   selector: 'news-twits-list',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsTwitsListComponent implements OnInit {
 
-  constructor() { }
+  twitsList: Observable<Twit[]> = of([]);
 
-  ngOnInit(): void {
+  constructor(private twitService: TwitService) {
   }
 
+  ngOnInit(): void {
+    this.getTwits();
+  }
+
+  getTwits(): void {
+    this.twitsList = this.twitService.getTwits();
+  }
 }
