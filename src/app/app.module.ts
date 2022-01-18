@@ -10,6 +10,9 @@ import { NewsHomeComponent } from './components/news/components/news-home/news-h
 import { NewsTwitCreationComponent } from './components/news/components/news-twit-creation/news-twit-creation.component';
 import { NewsTwitsListComponent } from './components/news/components/news-twits-list/news-twits-list.component';
 import { TwitComponent } from './components/news/components/news-twits-list/twit/twit.component';
+import { SuggestedNewsComponent } from './components/suggested/suggested-news/suggested-news.component';
+import { SuggestedFollowComponent } from './components/suggested/suggested-follow/suggested-follow.component';
+import { SuggestedNewsItemComponent } from './components/suggested/suggested-news/suggested-news-item/suggested-news-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { TwitComponent } from './components/news/components/news-twits-list/twit
     NewsHomeComponent,
     NewsTwitCreationComponent,
     NewsTwitsListComponent,
-    TwitComponent
+    TwitComponent,
+    SuggestedNewsComponent,
+    SuggestedFollowComponent,
+    SuggestedNewsItemComponent
   ],
   imports: [
     BrowserModule,

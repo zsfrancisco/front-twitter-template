@@ -1,0 +1,58 @@
+@import "src/assets/scss";
+
+:host {
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+  line-height: 1.25rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-dark-hover-x2;
+  }
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+.suggested-news-item {
+  &__content {
+    width: 75%;
+
+    span {
+      color: $gray;
+
+      span {
+        color: $blue-light;
+      }
+    }
+
+    p {
+      color: $white;
+      margin: 0;
+    }
+  }
+
+  &__image {
+    width: 25%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.625rem;
+    }
+  }
+
+  &__options {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    img {
+      width: 1.25rem;
+      height: auto;
+    }
+  }
+}

@@ -8,9 +8,6 @@ import {TWITS} from "../data";
 })
 export class TwitService {
 
-  constructor() {
-  }
-
   getTwits(): Observable<Twit[]> {
     return of(TWITS);
   }

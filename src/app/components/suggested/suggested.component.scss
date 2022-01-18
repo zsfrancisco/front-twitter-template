@@ -4,17 +4,20 @@
   width: 30%;
   padding: 0.5rem 1.25rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .suggested {
   &__search {
-    width: 70%;
-    height: 1rem;
+    width: 80%;
+    height: 3rem;
     border-radius: 624.938rem;
     padding: 1rem;
     background-color: $blue-dark-hover;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 
     input {
       height: 100%;
