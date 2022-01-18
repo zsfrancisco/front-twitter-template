@@ -21,3 +21,26 @@
     background-color: $blue-light-hover;
   }
 }
+
+.suggested-section {
+  width: 80%;
+  padding: 1rem 0;
+  border-radius: 1.25rem;
+  background-color: $blue-dark-hover;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  color: $white;
+}
+
+.suggested-section-item {
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+  line-height: 1.25rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-dark-hover-x2;
+  }
+}

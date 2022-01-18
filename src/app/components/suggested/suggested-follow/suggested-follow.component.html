@@ -1,1 +1,4 @@
-<p>suggested-follow works!</p>
+<h3>A quién seguir</h3>
+<suggested-follow-item *ngFor="let followItem of suggestedFollowList|async"
+                       [suggestedFollowItem]="followItem">
+</suggested-follow-item>

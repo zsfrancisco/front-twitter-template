@@ -1,0 +1,10 @@
+@import "src/assets/scss";
+
+:host {
+  @extend .suggested-section;
+}
+
+h3 {
+  margin: 0;
+  padding: 0 1rem;
+}

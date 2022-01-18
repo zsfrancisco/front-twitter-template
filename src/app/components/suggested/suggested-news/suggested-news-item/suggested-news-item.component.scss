@@ -1,15 +1,7 @@
 @import "src/assets/scss";
 
 :host {
-  display: flex;
-  padding: 1rem;
-  box-sizing: border-box;
-  line-height: 1.25rem;
-
-  &:hover {
-    cursor: pointer;
-    background-color: $blue-dark-hover-x2;
-  }
+  @extend .suggested-section-item;
 }
 
 span {

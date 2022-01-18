@@ -13,6 +13,7 @@ import { TwitComponent } from './components/news/components/news-twits-list/twit
 import { SuggestedNewsComponent } from './components/suggested/suggested-news/suggested-news.component';
 import { SuggestedFollowComponent } from './components/suggested/suggested-follow/suggested-follow.component';
 import { SuggestedNewsItemComponent } from './components/suggested/suggested-news/suggested-news-item/suggested-news-item.component';
+import { SuggestedFollowItemComponent } from './components/suggested/suggested-follow/suggested-follow-item/suggested-follow-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SuggestedNewsItemComponent } from './components/suggested/suggested-new
     TwitComponent,
     SuggestedNewsComponent,
     SuggestedFollowComponent,
-    SuggestedNewsItemComponent
+    SuggestedNewsItemComponent,
+    SuggestedFollowItemComponent
   ],
   imports: [
     BrowserModule,
