@@ -5,7 +5,7 @@
   display: flex;
   padding: 0 1.25rem 0.5rem;
   box-sizing: border-box;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $gray-border;
 }
 
 .news-twit-creation {
@@ -26,14 +26,14 @@
     flex-direction: column;
 
     .what-is-happening {
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid $gray-border;
       display: flex;
       flex-direction: column;
       padding: 1.2rem 0 0.5rem 0.625rem;
 
       span {
         font-size: 1.25rem;
-        color: $gray;
+        color: $gray-font;
 
         &:last-of-type {
           margin-top: 0.5rem;

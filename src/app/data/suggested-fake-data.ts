@@ -2,26 +2,24 @@ import {SuggestedFollow, SuggestedNews} from "../tyoes";
 
 export const SUGGESTED_NEWS: SuggestedNews[] = [
   {
-    theme: "Fútbol - Hace 1 hora",
-    title: "Lewandoski es The Best de 2021",
+    theme: "Soccer. Trending",
+    title: "Lewandoski is The Best 2021",
     about: "Lewandoski",
-    image: "assets/images/jpg/tweet-lewandoski.jpg"
   },
   {
-    theme: "Tendencia en Colombia",
+    theme: "Trending in Colombia",
     title: "Tatanga",
     tweetsCount: "3.094 Tweets"
   },
   {
-    theme: "Tendencia en Colombia",
+    theme: "Trending in Colombia",
     title: "Juanes",
-    about: "Música"
+    about: "Music"
   },
   {
-    theme: "Gamming - EN DIRECTO",
-    title: "Ibai, Tortillaland y Cristinini entre las premiaciones en los ESLAND",
+    theme: "Gamming. Trending",
+    title: "Ibai, Tortillaland and Cristinini  ESLAND",
     about: "Jagger, Ibai",
-    image: "assets/images/jpg/tweet-ibai.jpg"
   },
 ]
 

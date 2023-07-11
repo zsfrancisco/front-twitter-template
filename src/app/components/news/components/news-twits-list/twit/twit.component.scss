@@ -3,12 +3,12 @@
 :host {
   width: 100%;
   display: flex;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $gray-border;
   padding: 0.5rem 1.25rem 0;
   box-sizing: border-box;
 
   &:hover {
-    background-color: $blue-dark-hover;
+    background-color: $black-hover;
     cursor: pointer;
   }
 }
@@ -44,7 +44,7 @@
           color: $white;
 
           span {
-            color: $gray;
+            color: $gray-font;
           }
         }
 
@@ -85,7 +85,7 @@
         }
 
         span {
-          color: $gray;
+          color: $gray-font;
           font-size: 0.9rem;
         }
       }

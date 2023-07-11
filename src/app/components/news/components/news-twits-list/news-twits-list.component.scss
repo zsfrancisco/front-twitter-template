@@ -12,35 +12,19 @@
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 0.5rem 0;
-    padding: 0 1.25rem;
+    padding: 1rem;
+    border-bottom: 1px solid $gray-border;
 
-    .comment-icon {
-      width: 10%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-      img {
-        width: 1.25rem;
-        height: 1.25rem;
-        margin-right: 10%;
-      }
+    &:hover {
+      background-color: $black-hover;
+      cursor: pointer;
     }
 
-    .information-content {
-      width: 90%;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-
-      span {
-        color: $gray;
-
-        span {
-          color: $blue-light;
-        }
-      }
+    span {
+      color: $blue-light;
+      text-align: center;
+      width: 100%;
+      font-size: 1rem;
     }
   }
 }

@@ -1,7 +1,7 @@
 <section id="news-content-id" class="suggested-news-item__content">
   <span>{{suggestedNewsItem.theme}}</span>
   <p>{{suggestedNewsItem.title}}</p>
-  <span *ngIf="!suggestedNewsItem.tweetsCount">Tendencias sobre <span>{{suggestedNewsItem.about}}</span></span>
+  <span *ngIf="!suggestedNewsItem.tweetsCount">Trending with <span>{{suggestedNewsItem.about}}</span></span>
   <span *ngIf="suggestedNewsItem.tweetsCount">{{suggestedNewsItem.tweetsCount}}</span>
 </section>
 <section *ngIf="suggestedNewsItem.image" class="suggested-news-item__image" id="news-image-id">
