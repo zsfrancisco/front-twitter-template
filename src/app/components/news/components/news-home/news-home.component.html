@@ -1,4 +1,8 @@
 <span>Home</span>
-<button>
-  <img alt="featured-tweets" src="assets/images/svg/stars-icon.svg">
-</button>
+<div>
+  <button *ngFor="let button of optionButtons" (click)="optionSelected=button">
+    <span [class.option-selected]="button===optionSelected">
+      {{ button }}
+    </span>
+  </button>
+</div>

@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'news-home',
   templateUrl: './news-home.component.html',
   styleUrls: ['./news-home.component.scss']
 })
-export class NewsHomeComponent implements OnInit {
+export class NewsHomeComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  optionButtons: string[] = [
+    'For you',
+    'Following'
+  ]
+  
+  optionSelected = this.optionButtons[0];
 
 }
