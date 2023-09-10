@@ -5,7 +5,7 @@
   <div class="twit-information">
 
     <div class="twit-information__content">
-      <span>{{twit.userFullName}} <span>{{twit.username}} - {{twit.timeOfPublished}}</span></span>
+      <span>{{twit.userFullName}}</span> <span>{{twit.username}} - {{twit.timeOfPublished}}</span>
       <p>{{twit.content}}</p>
     </div>
     <div class="twit-information__options">
@@ -24,6 +24,10 @@
     </div>
     <div class="reaction">
       <img alt="favorite-icon" src="assets/images/svg/heart-icon.svg">
+      <span>{{twit.favorites}}</span>
+    </div>
+    <div class="reaction">
+      <img alt="metrics-icon" src="assets/images/svg/metrics-icon.svg">
       <span>{{twit.favorites}}</span>
     </div>
     <div class="reaction">

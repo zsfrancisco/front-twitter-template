@@ -6,6 +6,7 @@
   border-bottom: 1px solid $gray-border;
   padding: 0.5rem 1.25rem 0;
   box-sizing: border-box;
+  font-size: 0.938rem;
 
   &:hover {
     background-color: $black-hover;
@@ -26,7 +27,7 @@
 
   &__content {
     width: 90%;
-    font-size: 1rem;
+    font-size: inherit;
 
     img {
       width: 100%;
@@ -41,18 +42,22 @@
         width: 90%;
 
         span {
-          color: $white;
+          &:first-child {
+            color: $white;
+            margin-right: 0.25rem;
 
-          span {
-            color: $gray-font;
+            &:hover {
+              text-decoration: underline;
+            }
           }
+
+          color: $gray-font;
         }
 
         p {
           line-height: normal;
           color: $white;
         }
-
       }
 
       &__options {
@@ -71,10 +76,10 @@
     .reactions {
       width: 100%;
       display: flex;
+      justify-content: space-between;
       margin: 0.5rem 0;
 
       .reaction {
-        width: 25%;
         display: flex;
         align-items: center;
 

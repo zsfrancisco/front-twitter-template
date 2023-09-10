@@ -23,6 +23,8 @@ button {
   color: $black;
   height: 2rem;
   border-radius: 624.938rem;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 
 .suggested-follow-item {
@@ -30,16 +32,14 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 0.938rem;
+    font-weight: 700;
 
     span {
       color: $white;
-      font-size: 1rem;
-      font-weight: bold;
 
       &:last-of-type {
-        color: $gray-border;
-        font-size: 0.8rem;
-        font-weight: normal;
+        color: $gray-font;
       }
     }
   }
